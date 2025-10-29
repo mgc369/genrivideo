@@ -1,0 +1,400 @@
+/* ==================== БАЗОВЫЕ СТИЛИ ==================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.section {
+    padding: 48px 5%; /* Увеличены отступы */
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+    background-color: #fff; /* Глубокий синий */
+    color: #2e2d2d;
+    padding: 60px 5% 5px;
+    text-align: center;
+    /* Создаем легкий градиент или узор для фона */
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://via.placeholder.com/1920x800.png?text=Dynamic+Video+Background');*/
+    background-color: #aaa6a6;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #124ea2;
+    /*font-size: 3.5em;  Очень крупный заголовок */
+    /*margin-bottom: 20px;*/
+    /*font-weight: 800;*/
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    /*text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);*/
+}   
+
+.cta-button {
+    display: inline-block;
+    background-color: #FF6700; /* Яркий оранжевый */
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 50px; /* Скругленная кнопка */
+    font-weight: 700;
+    /*font-size: 1.2em;*/
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 8px 15px rgba(255, 103, 0, 0.4); /* Красивая тень */
+}
+
+.cta-button:hover {
+    background-color: #cc5300;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 103, 0, 0.6);
+}
+
+/* ==================== GENERAL STYLES ==================== */
+h2 {
+    font-size: 2.0em;
+    color: #0047AB;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #FF6700;
+    border-radius: 2px;
+}
+
+/* ==================== PROBLEM SECTION ==================== */
+.problem-section {
+    text-align: center;
+}
+
+.problem-section h2 {
+    font-size: 25px;
+}
+
+.problem-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.problem-list div {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    flex-basis: 45%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Мягкая тень */
+    transition: transform 0.3s;
+}
+
+.problem-list div:hover {
+    transform: translateY(-5px);
+}
+
+.problem-list strong {
+    color: #FF6700;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ==================== SOLUTION/TABLE STYLES ==================== */
+.solution-section {
+    background-color: #e9ecef;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.solution-section h2 {
+    font-size: 25px;
+}
+
+h3 {
+    /*color: #0047AB;*/
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 18px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #0047AB;
+    color: #fff;
+    font-weight: 700;
+    /*text-transform: capitalize;*/
+}
+
+/*td:first-child {
+    font-weight: 600;
+}*/
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ==================== POTENTIAL SECTION ==================== */
+.potential-section ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.potential-section h2 {
+    font-size: 25px;
+}
+
+.potential-section ul li {
+    background: #fff;
+    padding: 25px;
+    border-left: 6px solid #FF6700;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/* ==================== HOW IT WORKS / PRICE ==================== */
+.requirements {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.requirements h3 {
+    font-size: 25px;
+    color: #0047AB;
+    border-bottom: 2px solid #FF6700;
+    padding-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.requirements p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.how-it-works h2 {
+    font-size: 25px;
+}
+
+.price-section {
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.price-section h2 {
+    font-size: 25px;
+}
+
+.price-info h3 {
+    color: #FF6700;
+    /*font-size: 1.8em;*/
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.price-info table {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+.price-info table th {
+    background-color: #FF6700;
+}
+
+.price-info table tr:nth-child(even) {
+    background-color: #fff5ee; /* Светло-оранжевый фон для строк */
+}
+
+.note {
+    font-style: italic;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+    /*background-color: #253df2; Темный фон */
+    background-color: #0047AB;
+    color: #fff;
+    text-align: center;
+    padding: 20px 5%;
+}
+
+.footer h3 {
+    font-weight: 100;
+    font-size: 25px;
+    color: #fff;
+    /*margin-bottom: 20px;*/
+}
+
+.footer p {
+    font-size: 1.2em;
+    /*margin-bottom: 30px;*/
+}
+
+.footer .phone-number {
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-top: 20px;
+    color: #FF6700;
+}
+
+/* ==================== АДАПТИВНОСТЬ (MEDIA QUERIES) ==================== */
+@media (max-width: 900px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.3em;
+    }
+    .problem-list div {
+        flex-basis: 100%;
+    }
+    .potential-section ul {
+        grid-template-columns: 1fr;
+    }
+    .cta-button {
+        padding: 18px 30px;
+    }
+}
+/* Compact vertical rhythm overrides */
+.section + .section{padding-top:36px}
+h1,h2,h3{margin-top:0.6em;margin-bottom:0.6em}
+p,ul,ol{margin-top:0.5em;margin-bottom:0.7em}
+.card,.container,.panel{margin-top:16px;margin-bottom:16px}
+
+/* ===== COMBOS SECTION (combinations counter) ===== */
+.combos-section { text-align: center; }
+.combos-section h2 {font-size: 25px;}
+.combos-card {
+    background:#fff;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 4px solid #FF6700;
+}
+.combos-formula {
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+}
+.combos-number {
+    font-family: 'Montserrat', sans-serif;
+    /*font-weight: 800;*/
+    font-size: 2em;
+    color: #E53935;
+    letter-spacing: 1px;
+    margin: 6px 0 0 0;
+}
+.combos-label {
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 6px 0 14px 0;
+    color:#333;
+}
+.combos-note {
+    color:#444;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.order-form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff; 
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 71, 171, 0.15); /* Глубокий синий тень */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.order-form-container h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0047AB; /* Глубокий синий */
+    margin-bottom: 30px;
+}
+
+/* ==== Mobile heading fix — 2025‑10‑29 (only sizes/line-height for headings) ==== */
+html {
+  -webkit-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+/* Base density for headings (no effect on body text) */
+h1, h2, h3 { line-height: 1.15; }
+
+/* Phones and small tablets */
+@media (max-width: 768px) {
+  h1 { font-size: 24px !important; line-height: 1.14 !important; }
+  h2 { font-size: 20px !important; line-height: 1.14 !important; }
+  h3 { font-size: 18px !important; line-height: 1.14 !important; }
+}
+
+/* Very narrow phones */
+@media (max-width: 360px) {
+  h1 { font-size: 22px !important; line-height: 1.12 !important; }
+  h2 { font-size: 18px !important; line-height: 1.12 !important; }
+  h3 { font-size: 16px !important; line-height: 1.12 !important; }
+}
