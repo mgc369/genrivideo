@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Заголовки письма
     // ВАЖНО: замените "вашдомен.kz" на реальный домен сайта!
-    $email_headers = "From: Заказ GenRI <no-reply@вашдомен.kz>\r\n";
+    $email_headers = "From: Заказ GenRI <no-reply@genrivideo.vercel.app/>\r\n";
     $email_headers .= "Reply-To: $email\r\n";
     $email_headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
